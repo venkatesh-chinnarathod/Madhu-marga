@@ -1,0 +1,21 @@
+query AllUsers @auth(level: USER, insecureReason: "This operation is safe to expose to all logged in users.") {
+  users {
+    username
+    email
+    createdAt
+    avatarUrl
+    bio
+  }
+}
+
+mutation CreateUser($username: String!, $email: String!) @auth(level: PUBLIC, insecureReason: "This operation is safe to expose to the public for new user registration.") {
+  user_insert(data: {username: $username, email: $email, createdAt_expr: "request.time"})
+}
+
+mutation UpdateUserBio($bio: String!) @auth(level: USER) {
+  user_update(key: {uid_expr: "auth.uid"}, data: {bio: $bio})
+}
+
+mutation DeleteUser @auth(level: USER) {
+  user_delete(key: {uid_expr: "auth.uid"})
+}

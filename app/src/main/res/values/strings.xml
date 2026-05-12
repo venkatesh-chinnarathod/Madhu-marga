@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Madhu_marga</string>
+    <string name="app_title">Madhu-Marga: Digital Diary</string>
+    <string name="honey_flow_progress">Honey Flow Season Progress</string>
+    <string name="hint_hive_id">Hive ID (e.g. HIVE-01)</string>
+    <string name="hint_location">Location</string>
+    <string name="label_queen_present">Is Queen Present?</string>
+    <string name="label_pests_seen">Any Pests/Mites Seen?</string>
+    <string name="label_activity_level">Activity Level (Low/Medium/High):</string>
+    <string name="hint_activity_level">Activity Level</string>
+    <string name="hint_honey_qty">Honey Collected (kg)</string>
+    <string name="btn_save_log">Save Log</string>
+</resources>

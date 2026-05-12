@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "608693956641",
+    "project_id": "madhu-marga-514b6",
+    "storage_bucket": "madhu-marga-514b6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608693956641:android:8ed38babdadb01ad8b7360",
+        "android_client_info": {
+          "package_name": "com.example.madhu_marga"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDXpfJfRg6JlhNewha58mfpIsjcI4npNE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608693956641:android:68898fec7e886c6e8b7360",
+        "android_client_info": {
+          "package_name": "com.example.madhumarga"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDXpfJfRg6JlhNewha58mfpIsjcI4npNE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

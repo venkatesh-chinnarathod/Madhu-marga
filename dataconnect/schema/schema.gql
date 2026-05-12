@@ -1,0 +1,47 @@
+type User @table {
+  displayName: String!
+  createdAt: Timestamp!
+  email: String
+  photoUrl: String
+}
+
+type Apiary @table {
+  name: String!
+  createdAt: Timestamp!
+  location: String
+  description: String
+  user: User
+}
+
+type Hive @table {
+  name: String!
+  createdAt: Timestamp!
+  breed: String
+  acquisitionDate: Date
+  notes: String
+  apiary: Apiary
+}
+
+type Inspection @table {
+  inspectionDate: Date!
+  createdAt: Timestamp!
+  queenPresent: Boolean
+  broodPattern: String
+  pestObservation: String
+  diseaseObservation: String
+  honeyStores: String
+  pollenStores: String
+  temperament: String
+  notes: String
+  critical: Boolean
+  hive: Hive
+}
+
+type Harvest @table {
+  harvestDate: Date!
+  quantityKg: Float!
+  createdAt: Timestamp!
+  notes: String
+  typeOfHoney: String
+  hive: Hive
+}
